@@ -237,7 +237,7 @@ border: 1px solid #8E8F99;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-    text-align: left;
+       text-align: left;
 }
 .service-description {
     font-size: 16px;
@@ -252,15 +252,15 @@ border: 1px solid #8E8F99;
     background-color: #f4f4fd;
     text-align: center;
 }
-
-.team-title{
+.team-title {
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+   
 }
 
 .team-list {
@@ -271,33 +271,86 @@ border: 1px solid #8E8F99;
     margin: 0;
 }
 
-.team-member {
-    background-color: #ffffff;
-    border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100% - 3 * 24px) / 4);
-}
+ .team-member {
+     background-color: #ffffff;
+     border-radius: 0px 0px 4px 4px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     width: 264px;
+     height:428px;
+     Bottom: 32px ;
+     Gap :32px;
+ }
 
+ .team-photo {
+     width: 264px;
+     height: 260px;  
+ }
 .member-details {
     padding: 32px 0;
     text-align: center;
+    width: Fixed (232px)px;
+    height: Hug (56px)px;
+    gap: 8px;
+    opacity: 0px;
 }
+.team-member-title {
 
-.team-member-title{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
     color: #2e2f42;
-    margin-bottom: 8px;
+
 }
 
 .team-member-role {
     font-size: 16px;
     letter-spacing: 0.02em;
     line-height: 1.5;
+    line-height: 24px;
     color: #434455;
+        text-align: center;
+        Weight: 400;
 }
 
+ .social-icons {
+    display: flex;
+    justify-content: center;
+    width: Hug (232px)px;
+    height: Hug (40px)px;
+    gap: 24px;
+    opacity: 0px;
+ }
+
+ .social-icon {
+     list-style: none;
+ }
+
+ .social-link {
+     display: block;
+     text-decoration: none;
+     position: relative;
+ }
+
+ .circle {
+     width: 40px;
+     height: 40px;
+     background-color: #4c5be9;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .icon {
+     width: 20px;
+     height: 20px;
+     fill: #fff;
+ }
 
 /* 4. Bölüm Section */
 .app-section {
@@ -359,43 +412,121 @@ border: 1px solid #8E8F99;
         color: #434455;
         margin-top: 8px;
       }
+          /* Footer Stil */
 .site-footer {
     padding: 100px 0;
     background-color: #2e2f42; /* Arka plan rengi */
     text-align: center;
+    Height :312px;
+}
+.social-media {
+    width: 208px;
+        height: 80px;
+        top: 3256px;
+        left: 540px;
+        gap: 0px;
+        opacity: 0px;
+}
+.icon-text{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: #FFFFFF;
 }
 
-/* Footer Kapsayıcı Container */
-.site-footer .container {
-    max-width: 1158px;
-    margin: 0 auto;
-}
 
 /* Footer Logo */
 .footer-logo {
     display: inline-block;
-    font-family: "Raleway", sans-serif; /* Font Ailesi */
-    font-weight: 700; /* Kalınlık */
-    font-size: 18px; /* Font Boyutu */
-    line-height: 1.17; /* Satır Aralığı */
-    letter-spacing: 0.03em; /* Harf Boşluğu */
-    text-transform: uppercase; /* Büyük Harf */
-    color: #4d5ae5; /* Logo Rengi */
-    text-decoration: none; /* Alt Çizgiyi Kaldır */
+    font-family: "Raleway", sans-serif;
+    /* Font Ailesi */
+    font-weight: 700;
+    /* Kalınlık */
+    font-size: 18px;
+    /* Font Boyutu */
+    line-height: 1.17;
+    /* Satır Aralığı */
+    letter-spacing: 0.03em;
+    /* Harf Boşluğu */
+    text-transform: uppercase;
+    /* Büyük Harf */
+    color: #4d5ae5;
+    /* Logo Rengi */
+    text-decoration: none;
+    /* Alt Çizgiyi Kaldır */
     margin-bottom: 16px;
 }
 
 /* Logo İçindeki 'Studio' Metni */
 .footer-highlight {
-    color: #2e2f42; /* Studio için metin rengi */
+    color: #f4f4fd;
+    /* Studio için metin rengi */
 }
 
 /* Footer Paragraf */
 .footer-text {
     max-width: 264px;
-    margin: 0 auto;
-    line-height: 1.5; /* Satır Aralığı */
-    color: #f4f4fd; /* Metin Rengi */
-    letter-spacing: 0.02em; /* Harf Boşluğu */
-    font-size: 16px; /* Ek olarak font boyutunu ayarladım */
+    margin: 0 auto 24px auto;
+    /* Alt Boşluk Eklendi */
+    line-height: 1.5;
+    /* Satır Aralığı */
+    color: #f4f4fd;
+    /* Metin Rengi */
+    letter-spacing: 0.02em;
+    /* Harf Boşluğu */
+    font-size: 16px;
+    /* Font Boyutu */
 }
+.social-media {
+    width: 208px;
+    height: 80px;
+    top: 3256px;
+    left: 540px;
+    gap: 0px;
+    opacity: 0px;
+
+
+
+}
+/* Sosyal Medya İkonları */
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    /* Simgeleri Ortala */
+    gap: 16px;
+    /* Simgeler Arası Boşluk */
+    margin-top: 16px;
+}
+
+.footer-social-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4d5ae5;
+    /* Simge Arka Plan Rengi */
+    border-radius: 50%;
+    /* Daire Görünümü */
+    transition: background-color 0.3s ease;
+    /* Hover Efekti */
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
+    /* Hover Renk */
+}
+
+.footer-social-icon {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4fd;
+    /* Simge Rengi */
+}
+
