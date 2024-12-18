@@ -26,11 +26,13 @@ a {
     color: inherit;
     transition: color 0.3s;
 }
+
 img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 /* Normalize ve Temel Stiller */
 @import url('modern-normalize.min.css');
 
@@ -38,13 +40,15 @@ img {
 header {
     background-color: #ffffff;
     color: #e5e7eb;
-   
-}
-header {border-bottom: 1px solid #e7e9fc;
+
 }
 
-.header-container-container{
-   display: flex;
+header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container-container {
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
@@ -53,7 +57,7 @@ header {border-bottom: 1px solid #e7e9fc;
 }
 
 .site-logo {
-    font-family: "raleway" , sans-serif;
+    font-family: "raleway", sans-serif;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.17;
@@ -65,14 +69,15 @@ header {border-bottom: 1px solid #e7e9fc;
 
 .site-logo .studio-text {
     color: #2e2f42;
-    
+
 }
 
 .nav-bar {
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 24px 0;
 }
+
 .nav-links {
     display: flex;
     gap: 40px;
@@ -83,11 +88,11 @@ header {border-bottom: 1px solid #e7e9fc;
 .nav-link-portfolio,
 .nav-link-contacts {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
 }
 
 .nav-link-home:hover,
@@ -134,7 +139,7 @@ header {border-bottom: 1px solid #e7e9fc;
 
 /* 1. Main Section */
 
-  
+
 .main-section {
 
     background-color: #2e2f42;
@@ -197,6 +202,7 @@ header {border-bottom: 1px solid #e7e9fc;
 .services-section {
     padding: 120px 0;
 }
+
 .section-title {
     position: absolute;
     width: 1px;
@@ -207,6 +213,7 @@ header {border-bottom: 1px solid #e7e9fc;
     white-space: nowrap;
     border: 0;
 }
+
 .services-list {
     display: flex;
     gap: 24px;
@@ -214,6 +221,7 @@ header {border-bottom: 1px solid #e7e9fc;
     padding: 0;
     margin: 0;
 }
+
 .service-icon {
     fill: #2e2f42;
     /* İkon rengi */
@@ -222,14 +230,16 @@ header {border-bottom: 1px solid #e7e9fc;
     display: inline-block;
     width: 264px;
     height: 112px;
-background-color:#F4F4FD;
-border: 1px solid #8E8F99;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
 
 }
+
 .service-item {
     width: calc((100% - 3 * 24px) / 4);
     text-align: center;
 }
+
 .service-title {
     font-weight: 500;
     font-size: 20px;
@@ -237,8 +247,9 @@ border: 1px solid #8E8F99;
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
-       text-align: left;
+    text-align: left;
 }
+
 .service-description {
     font-size: 16px;
     line-height: 1.5;
@@ -246,7 +257,7 @@ border: 1px solid #8E8F99;
     color: #434455;
     text-align: left;
 }
-/* 3. Bölüm Section */
+
 /* 3. Bölüm Section */
 .team-section {
     padding: 120px 0;
@@ -262,17 +273,17 @@ border: 1px solid #8E8F99;
     text-transform: capitalize;
     color: #2e2f42;
     margin-bottom: 72px;
+
 }
 
 .team-list {
     display: flex;
     gap: 24px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center;
+    justify-content: center;  /**/
     flex-wrap: wrap;
-}
+    list-style: none;
+    margin: 0;
+    padding: 0; }
 
 .team-member {
     background-color: #ffffff;
@@ -280,46 +291,60 @@ border: 1px solid #8E8F99;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 264px;
     height: 428px;
-    overflow: hidden;
-    text-align: center;
+    Bottom: 32px;
+    Gap: 32px;
 }
 
 .team-photo {
-    width: 100%;
+    width: 264px;
     height: 260px;
-    object-fit: cover;
 }
 
 .member-details {
-    padding: 32px 16px;
+    padding: 32px 0;
+    text-align: center;
+    width: Fixed (232px)px;
+    height: Hug (56px)px;
+    gap: 8px;
+    opacity: 0px;
 }
 
 .team-member-title {
-    font-family: 'Roboto', sans-serif;
+
+    font-family: Roboto;
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
     color: #2e2f42;
-    margin: 0 0 8px 0;
+margin-bottom: 8px; /**/
 }
 
 .team-member-role {
     font-size: 16px;
-    font-weight: 400;
     letter-spacing: 0.02em;
+    line-height: 1.5;
     line-height: 24px;
     color: #434455;
-    margin: 0;
+    text-align: center;
+    Weight: 400;
+    margin-bottom: 16px;
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 16px;
-    margin-top: 16px;
-    padding: 0;
-}
+    width: Hug (232px)px;
+    height: Hug (40px)px;
+    gap: 24px;
+    opacity: 0px;
+    margin-bottom: 32px;
+    }
+    
+
 
 .social-icon {
     list-style: none;
@@ -329,50 +354,63 @@ border: 1px solid #8E8F99;
     display: block;
     text-decoration: none;
     position: relative;
+  
 }
-
+.circle{ 
+    width : 50px;
+}
 .circle {
-    width: 40px;
+    Property 1="Variant2";
+   
     height: 40px;
+    top: -0px;
+        gap: 0px;
+        angle: -0 deg;
+        opacity: 0px;
     background-color: #4c5be9;
+    padding: ;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease;
 }
+width: 40px;
+height: 40px;
 
-.circle:hover {
-    background-color: #404bbf;
-}
 
+
+   .circle:hover {
+       background-color: #404bbf;}
 .icon {
     width: 20px;
     height: 20px;
-    fill: #ffffff;
+    fill: #fff;
 }
-
 /* 4. Bölüm Section */
+/* Genel Stiller */
 .app-section {
     padding: 120px 0;
-  }
-  .container {
-    margin-bottom:8px;
+    background-color: #ffffff;
+}
+
+.container {
+    margin: 0 auto;
     max-width: 1200px;
+}
+
+.title-class {
     
-
-  }
-
-  .title-class {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-bottom: 72px;
-  }
-  .app-list {
+    margin-bottom: 50px;
+}
+
+.app-list {
     display: flex;
     flex-wrap: wrap;
     column-gap: 24px;
@@ -380,39 +418,102 @@ border: 1px solid #8E8F99;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .app-item {
-    flex-basis: calc((100% - 3 * 24px) / 4)
-    text-align: center;
-  }
-  .app-item img {
-    width: 360px;
+}
+
+.app-item {
+    flex-basis: calc((100% - 72px) / 3);
+    background-color: #ffffff;
     border-radius: 8px;
-  }
-  
-  .app-info {
+    box-shadow: 0 4px 6px rgba(46, 47, 66, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+}
+
+.app-item:hover {
+    box-shadow: 0 8px 12px rgba(46, 47, 66, 0.2);
+}
+
+/* Resim Container */
+.app-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.app-img-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-item:hover .app-img-container img {
+    transform: scale(1.1);
+}
+
+/* Hover Overlay */
+.app-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(77, 90, 229, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.app-item:hover .app-overlay {
+    transform: translateY(0);
+}
+
+.app-overlay-text {
+    color: #f4f4fd;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Bilgi Bölümü */
+.app-info {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
+    text-align: center;
+}
+
+.subtitle-class {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
     margin-bottom: 8px;
 }
-    .subtitle-class {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        margin-top: 16px;
-      }
-      .text-class{
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        margin-top: 8px;
-      }
-          /* Footer Stil */
+
+.text-class {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 992px) {
+    .app-item {
+        flex-basis: calc((100% - 48px) / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .app-item {
+        flex-basis: calc(100% - 24px);
+    }
+}
+/* Footer Stil */
 /* Genel Footer Stili */
 .site-footer {
     background-color: #2e2f42;
